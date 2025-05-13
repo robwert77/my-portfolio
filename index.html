@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Gonzalez - Game Reverse Engineering & Modding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom scrollbar for a more modern feel (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a202c; /* dark-900 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* dark-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* dark-500 */
+        }
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        body {
+            font-family: 'Inter', sans-serif; /* Default Tailwind font, or replace with your preferred one */
+            background-color: #111827; /* Tailwind gray-900 */
+            color: #e5e7eb; /* Tailwind gray-200 */
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .fiverr-button {
+            background-color: #1DBF73; /* Fiverr Green */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .fiverr-button:hover {
+            background-color: #1AAE67; /* Darker Fiverr Green */
+        }
+        .project-card img { /* Ensure images in project cards don't overflow and maintain aspect ratio */
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, cropping if necessary */
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <nav class="sticky top-0 z-50 p-4 shadow-lg glassmorphism">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Robert Gonzalez</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                <a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 md:py-32 bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                Robert Gonzalez
+            </h1>
+            <p class="text-xl md:text-2xl text-green-400 font-semibold mb-8">
+                Expert in Video Game Reverse Engineering & Mod Development
+            </p>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+                Transforming games with custom mods, trainers, and in-depth reverse engineering.
+                Leveraging 5 years of coding experience to bring your game modification ideas to life.
+            </p>
+            <a href="YOUR_FIVERR_PROFILE_LINK_HERE" target="_blank" rel="noopener noreferrer"
+               class="fiverr-button font-bold py-3 px-8 rounded-lg text-lg inline-flex items-center shadow-xl hover:shadow-2xl transform hover:scale-105">
+                <i class="fab fa-fiverr mr-2"></i> Visit My Fiverr Gig
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto bg-gray-700 p-8 rounded-xl shadow-2xl glassmorphism">
+                <p class="text-lg text-gray-200 mb-4">
+                    My name is Robert Gonzalez, and with approximately five years of coding experience, I've developed a strong skill set in JavaFX 2D game development, video game modding, and reverse engineering using tools like Cheat Engine.
+                </p>
+                <p class="text-lg text-gray-200 mb-4">
+                    I'm passionate about delving into the mechanics of video games. My current work focuses on guiding others in game reverse engineering and developing custom modifications, such as trainers and tools for offline single-player games, primarily leveraging Cheat Engine and other RE tools.
+                </p>
+                <p class="text-lg text-gray-200">
+                    Whether you're looking to understand game internals, create a unique mod, or need a custom trainer, I'm here to help bring your vision to reality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-16">My Expertise</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 glassmorphism">
+                    <div class="text-green-400 mb-4 text-3xl"><i class="fas fa-search-plus"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Game Reverse Engineering</h3>
+                    <p class="text-gray-300">
+                        In-depth analysis of game code and memory structures. I use tools like Cheat Engine, x64dbg, IDA Pro (if applicable, mention your tools) to understand game logic, data, and identify modding opportunities.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 glassmorphism">
+                    <div class="text-green-400 mb-4 text-3xl"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Video Game Modifications</h3>
+                    <p class="text-gray-300">
+                        Creating custom mods to alter gameplay, add new features, or change game behavior. From simple tweaks to more complex modifications for offline games.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 glassmorphism">
+                    <div class="text-green-400 mb-4 text-3xl"><i class="fas fa-cogs"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Cheat Engine & Trainers</h3>
+                    <p class="text-gray-300">
+                        Expertise in Cheat Engine for memory scanning, scripting, and creating custom trainers for offline single-player games to enhance your gaming experience.
+                    </p>
+                </div>
+                 <div class="bg-gray-800 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 glassmorphism">
+                    <div class="text-green-400 mb-4 text-3xl"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">JavaFX 2D Game Dev</h3>
+                    <p class="text-gray-300">
+                        Experience in developing 2D games using JavaFX, showcasing a foundational understanding of game logic and development principles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-16">Featured Projects</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                Here are a few examples of my work. For more details or to discuss your specific needs, please reach out via Fiverr!
+                (Replace these placeholders with your actual projects)
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-700 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 glassmorphism">
+                    <img src="https://placehold.co/600x400/374151/e5e7eb?text=Project+Image+1" alt="Project 1 Thumbnail" class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Project Title 1: [Name of Game] Trainer</h3>
+                        <p class="text-gray-300 mb-4 text-sm">
+                            A short description of the project. What did you do? What challenges did you overcome? What was the result?
+                            E.g., "Developed a comprehensive trainer for [Game Name] providing features like infinite health, ammo, and currency using Cheat Engine and C++."
+                        </p>
+                        <p class="text-sm text-green-400 font-semibold">Technologies: Cheat Engine, C++, Assembly (if applicable)</p>
+                        </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 glassmorphism">
+                    <img src="https://placehold.co/600x400/374151/e5e7eb?text=Project+Image+2" alt="Project 2 Thumbnail" class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Project Title 2: [Name of Game] Mod</h3>
+                        <p class="text-gray-300 mb-4 text-sm">
+                            E.g., "Reverse engineered game files for [Game Name] to create a mod that introduces new gameplay mechanics and custom items. Utilized [Tool A, Tool B]."
+                        </p>
+                        <p class="text-sm text-green-400 font-semibold">Technologies: [Specific RE Tools], [Scripting Language]</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 glassmorphism">
+                    <img src="https://placehold.co/600x400/374151/e5e7eb?text=Project+Image+3" alt="Project 3 Thumbnail" class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Project Title 3: JavaFX 2D Game</h3>
+                        <p class="text-gray-300 mb-4 text-sm">
+                            E.g., "Designed and developed a 2D platformer game using JavaFX, featuring custom physics and sprite animations. This project demonstrates my game development fundamentals."
+                        </p>
+                        <p class="text-sm text-green-400 font-semibold">Technologies: JavaFX, Java</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-32 bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+            <p class="text-lg text-gray-300 max-w-xl mx-auto mb-10">
+                If you're looking for professional game reverse engineering, mod development, or trainer creation services, let's connect on Fiverr!
+            </p>
+            <a href="YOUR_FIVERR_PROFILE_LINK_HERE" target="_blank" rel="noopener noreferrer"
+               class="fiverr-button font-bold py-4 px-10 rounded-lg text-xl inline-flex items-center shadow-xl hover:shadow-2xl transform hover:scale-105">
+                <i class="fab fa-fiverr mr-3"></i> Contact Me on Fiverr
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-400 text-sm">
+                &copy; <span id="currentYear"></span> Robert Gonzalez. All Rights Reserved.
+            </p>
+            </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Simple smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
